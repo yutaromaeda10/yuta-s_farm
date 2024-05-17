@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yuta's Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/736x/91/06/e2/9106e230da147abb2fc922aa70df5865.jpg");
+  min-height: 95%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">PRODUCT</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<style>
+
+        body{
+            font-family: latha;
+            color:white;
+            background:linear-gradient( rgba(0,255,0,0.65),rgba(0,255,0,0.65),rgba(0,255,0,0.38),rgba(0,255,0,0))
+            
+            ,url(https://static.vecteezy.com/system/resources/previews/002/095/292/large_2x/pair-of-chopsticks-picking-up-instant-noodles-on-a-white-plate-on-a-wooden-table-free-photo.jpg) no-repeat;
+            background-size: cover;
+            }
+            
+        .box{ width:900px ;
+        float: right;
+        border: 1px solid none;}
+        
+        .box ul li{
+            width: 120px;
+            float:right;
+            margin:10px auto;
+            text-align: center;
+        }
+        
+        .box ul li a{ text-decoration: none;
+        color:darkgrey;}
+        
+        .box ul li:hover{ background-color: green;}
+        .box ul li a:hover{ color:white;}
+         
+        .wd{
+            width:300px;
+            height: 539px;
+            background-color: rgb(0, 190, 0);
+            opacity: 0.8;
+            padding: 55px;
+           }
+            
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 40px auto;
+            }
+            
+        .wd h4{
+            text-align: justify;
+            color:darkgrey;
+            font-weight:normal;
+              }
+              
+        .wd h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 40px auto;
+               }
+</style>
+
+   <div class="wd">
+    
+      <h1>Yuta's Farm</h1>
+      <h3>hi there! Come, experience the beauty and abundance of our farm firsthand. Whether you're seeking the freshest produce, a serene escape into nature, or simply a taste of pure, wholesome living, you'll find it here!!!</h3>
+
+
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-green w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Fruits and Vegetable</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-grey">Fruits</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-grey">Vegetables</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pineappple</b><img src="https://i.pinimg.com/564x/41/fb/27/41fb275d1eb30c41fc680917cb78d297.jpg" style="float:left;width:90px;height:90px;"><span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Grow a pineapple in your own home from the top of store bought pineapple! Luckily, it's super easy to grow a pineapple indoors</p>
+      <hr>
+   
+      <h1><b>Mango</b><img src="https://i.pinimg.com/564x/31/cf/af/31cfaf6a0d1272bd8f018123e1bae312.jpg" style="float:left;width:90px;height:90px;"> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">A mango is a sweet tropical fruit, and it's also the name of the trees on which the fruit grows. Ripe mangoes are juicy, fleshy, and delicious.</p>
+      <hr>
+      
+      <h1><b>Grapes</b> <img src="https://i.pinimg.com/564x/82/5d/2a/825d2a7ee3f14c7e0dd9b334c849f5e8.jpg" style="float:left;width:90px;height:90px;"> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Discover nature's sweetest gems with grapes! Bursting with juicy goodness and vibrant colors, grapes are the perfect snack for any occasion.</p>
+      <hr>
+
+      <h1><b>Banana</b><img src="https://i.pinimg.com/564x/d2/83/72/d28372ce4dde6b19f49b5fedda072acb.jpg" style="float:left;width:90px;height:90px;"> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Savor the creamy goodness of nature's perfect snack: the banana! With its sunny hue and velvety texture, the banana is a delightful indulgence packed with potassium and natural sweetness.</p>
+      <hr>
+
+      <h1><b>Watermelon</b> <img src="https://i.pinimg.com/564x/f4/3d/a4/f43da486f831942091c57532173ae6eb.jpg" style="float:left;width:90px;height:90px;"><span class="w3-tag w3-red w3-round">FAVORITE!!!</span></h1>
+      <p class="w3-text-grey">watermelon! Bursting with hydrating juiciness and a symphony of sweetness, each succulent bite of watermelon transports you to a sunny paradise. </p>
+      <hr>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Green Bean</b> <img src="https://i.pinimg.com/564x/98/16/f6/9816f6f1c18535c072415c96774b4fbd.jpg" style="float:left;width:90px;height:90px;"> <span class="w3-tag w3-grey w3-round">Popular</span></h1>
+      <p class="w3-text-grey">Experience the crisp crunch and vibrant flavor of green beans natures verdant bounty waiting to elevate your culinary creations.</p>
+      <hr>
+   
+      <h1><b>Cabbage</b><img src="https://i.pinimg.com/564x/72/e6/06/72e60630b6bdcfd8662de868e61da968.jpg" style="float:left;width:90px;height:90px;"></h1>
+      <p class="w3-text-grey">cabbage adds a delightful crunch to salads, slaws, and stir-fries alike. Whether shredded for a vibrant coleslaw, braised to tender perfection cabbage boasts versatility that knows no bounds.</p>
+      <hr>
+      
+      <h1><b>Brocolli</b><img src="https://i.pinimg.com/564x/16/7e/5e/167e5ef03eadce20512d971e87e23476.jpg" style="float:left;width:90px;height:90px;"></h1>
+      <p class="w3-text-grey">broccoli offers a symphony of flavors and textures to tantalize your taste buds. Whether steamed to perfection, or tossed into stir-fries for a burst of freshness, </p>
+      <hr>
+
+      <h1><b>Egg Plant</b><img src="https://i.pinimg.com/564x/32/17/35/3217352bc1d424aaf74d622863c6732a.jpg" style="float:left;width:90px;height:90px;"></h1>
+      <p class="w3-text-grey">From its deep purple skin to its creamy flesh, each slice of eggplant promises a culinary adventure waiting to unfold. </p>
+
+      <h1><b>Squash</b><img src="https://i.pinimg.com/564x/b2/22/53/b22253ed27e215d205254d0f6c2c6642.jpg" style="float:left;width:90px;height:90px;"></h1>
+      <p class="w3-text-grey">With its smooth skin and robust flavor, squash offers a treasure trove of possibilities in the kitchen. </p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-green w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>This farm wants to serve you a lot of different fresh vegetables and fruits </p>
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <h2>24 HOURS OPEN!!!</h2>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://i.pinimg.com/564x/15/0d/5e/150d5eb081b61991d96edddda00272ef.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>call us at 09914478273</p>
+    <p> We offer huge and truck For delivery service</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many orders" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2024-05-17T00:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>y
